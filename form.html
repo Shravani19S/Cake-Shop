@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Cake</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <!-- Order Form -->
+    <section class="order-section">
+        <h2>Order Your Cake</h2>
+        <form id="cake-order-form" action="/order" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="cake-type">Choose Cake:</label>
+            <select id="cake-type" name="cakeType" required>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Vanilla">Vanilla</option>
+                <option value="Strawberry">Strawberry</option>
+                <option value="Red Velvet">Red Velvet</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="delivery-address">Delivery Address:</label>
+            <textarea id="delivery-address" name="address" rows="3" required></textarea>
+            <form id="cake-order-form" action="/order" method="POST">
+                <!-- form fields here -->
+                <button type="submit" class="order-btn">Submit Order</button>
+              </form>
+
+        </form>
+    </section>
+    <script src="form.js"></script>
+
+
+</body>
+
+</html>
